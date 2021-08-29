@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "tb worker")
+@Table(name = "tb_worker")
 public class Worker implements Serializable{
 
 	private static final long serialVersionUID = 1L;
