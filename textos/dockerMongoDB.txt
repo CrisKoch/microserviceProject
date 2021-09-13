@@ -1,0 +1,37 @@
+AULA 10/09 NOSQL
+******NOVO PROJETO USER/POST/COMMENT
+
+-> ABRIR POWERSHEL COMO ADMINISTRADOR
+COMANDOS:
+
+docker pull mongo:4.4.3-bionic 
+--->>> (Esse mongo:4.4.3-bionic foi o que o Alexandre escolheu baixar, tem no site 
+https://hub.docker.com/_/mongo?tab=tags&page=1&ordering=last_updated&name=4.4.3-bio)
+
+
+
+docker run -d -p 27017:27017 -v /data/db --name mongo1 mongo:4.4.3-bionic 
+--->>>(mongo1 foi o nome que eu dei, pode ser o que vc quiser)
+
+docker ps 
+--->>> (EU ACHO, PRA LISTAR IMAGENS E CONTAINERS, FAVOR VERIFICAR NA AULA ANTERIOR)
+
+docker exec -it mongo1 bash 
+--->>>(AQUI VAI MUDAR A LINHA NO POWERSHEL, QUER DIZER QUE FUNCIONOU, QUE TÁ DENTRO DO CONTAINER)
+
+
+
+help
+--->>> LISTA COMANDOS 
+
+mongo
+--->>> ENTRA NO MONGO
+
+show dbs
+--->>> MOSTRA DADOS DO BD
+
+exit
+--->>> SAI
+
+BAIXAR MONGODB COMPASS, quando for configurar, colocar em NEW CONECTIONS a String de conexao:
+mongodb://localhost:27017 
