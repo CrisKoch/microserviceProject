@@ -1,11 +1,10 @@
-package com.kochmann.hrpayroll;
+package com.kochmann.hreurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 @SpringBootTest
-class HrPayrollApplicationTests {
+class HrEurekaServer1ApplicationTests {
 
 	@Test
 	void contextLoads() {

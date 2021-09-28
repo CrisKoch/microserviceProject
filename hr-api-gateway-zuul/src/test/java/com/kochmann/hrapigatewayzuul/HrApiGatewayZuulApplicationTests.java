@@ -1,11 +1,10 @@
-package com.kochmann.hrpayroll;
+package com.kochmann.hrapigatewayzuul;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 @SpringBootTest
-class HrPayrollApplicationTests {
+class HrApiGatewayZuulApplicationTests {
 
 	@Test
 	void contextLoads() {

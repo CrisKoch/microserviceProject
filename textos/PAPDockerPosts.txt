@@ -1,0 +1,52 @@
+18/09/21
+
+Atividade Posts de BDNS
+
+LEMBRE-SE: ABRE POWERSHELL, DOCKER, MONGOCOMPASS, STS4 E POSTMAN. //HAJA MEMÓRIA RAM.
+
+***Docker***
+Startar (Só abrir ele já começa a funcionar)
+
+
+***POWERSHELL***
+Abrir PowerShell como administrador
+
+SITE COM COMANDOS BÁSICOS
+https://stack.desenvolvedor.expert/appendix/docker/comandos.html
+
+
+VERIFICA QUAL IMAGE TEM BAIXADO, SE NAO TIVER NENHUM, VERIFICAR EM OUTRA AULA COMO E QUAL BAIXAR
+docker image list 
+
+PARA RODAR O QUE JÁ TEM BAIXADO.... VERIFIQUE O NOME, TEM QUE SER DIFERENTE DO ULTIMO (ERA MONGO1, TIVE QUE COLOCAR AGORA MONGO2)
+docker run -d -p 27017:27017 -v /data/db --name mongo2 mongo:4.4.3-bionic
+
+PARA ENTRAR NA IMAGE.... LEMBRE-SE DE COLOCAR O NOME DA IMAGEM CORRETAMENTE
+docker exec -it mongo2 bash
+
+DENTRO DA IMAGE.... PARA ACESSAR MONGODB
+mongo
+
+MOSTRA SE TA OK, APARECE COMO TA EMBAIXO
+show dbs
+
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+
+
+***MONGOCOMPASS*** (PREVIAMENTE INSTALADO)
+COLOCAR LINK DE CONEXAO, NO NOSSO CASO, O ABAIXO:
+mongodb://localhost:27017 
+
+PARA SAIR DO POWERSHELL:
+exit
+
+***POSTMAN*** (TEM COLEÇÕES PRA CRIAR, CONEXÕES - OUTRA NOTA EXPLICANDO)
+
+***STS4***
+EXECUTAR O PROJETO NO STS4 (desenvolvido em aula)
+Testar no postman 
+TEM QUE FUNCIONAR AGORA!
+
